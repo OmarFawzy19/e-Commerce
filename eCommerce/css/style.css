@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+.btn {
+    background: #30e3ca;
+    border: unset;
+    outline: unset;
+    box-shadow: unset;
+    color: white;
+}
+
+.navbar {
+    margin-top: 20px;
+    position:absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    transform: none; 
+    border-radius: 8px;
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+.text-classy {
+    color: black;
+}
+
+.text-ads {
+    color: #30e3ca;
+}
+
+.heroSec {
+    background-image: url(/img/xhero_2.jpg.pagespeed.ic._xYTRIlPTB.webp);
+    position: relative;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+    z-index: 0; /* Base layer for hero section */
+}
+
+.heroSec::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    inset: 0;
+    z-index: -1; /* Overlay behind hero section */
+}
+
+.heroSec form {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+    padding: 17px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure form is above background but below navbar */
+}
+
+.btn:hover {
+    color: aliceblue;
+    animation: bounce 1s ease;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover, .nav-link:focus {
+    animation: jelloAnimation 0.5s; 
+    color: #30e3ca;
+}
+
+.heroSec p {
+    color: #ffffff6b;
+}
+
+.form-control-lg {
+    font-size: 1rem;
+    padding: 0.3rem 1.25rem;
+    border-radius: 0.3rem;
+}
+
+.form-select-lg {
+    font-size: 1rem;
+    padding: 0.45rem 1.25rem;
+    border-radius: 0.3rem;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;
+    margin-top: -60px;
+
+    
+}
+
+.card {
+    border: 1px; 
+    width: 200px; 
+    border-radius: 25px;
+    transition: transform 0.5s, background-color 0.5s; /* Smooth transition */
+}
+
+.card:hover {
+    background-color: #30e3ca;
+    transform: translateY(-10px); 
+    .icon{
+        color:aliceblue;
+    }
+   
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card .icon {
+    font-size: 2rem; 
+    color: #30e3ca;
+    transition: color 0.5s; 
+}
+
+.card-title {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+    transition: color 0.5s; 
+}
+
+.card:hover .card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    background-color: #dedede;
+    padding: 1px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: background-color 0.5s; 
+}
+
+.card:hover .card-text {
+    background-color: #ffffff; 
+}
+.fets{
+    background-color: #f8f9fa;
+    height: 100vh;
+}
+
+.fcard {
+    width: 95%; 
+    margin: 0 auto 15px; 
+    padding: 10px; 
+    box-shadow: #666;
+}
+
+.fcard .img img {
+    width: 100%; /* Ensure the image fits within the new card width */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+.fcard-body {
+    padding: 10px 0; /* Minimize padding inside the card */
+}
+.fcard .fcard-body .categ p{
+    font-size: 11px;
+    background-color: #c9c9c9;
+    padding: 0 10px;
+    border-radius: 50px;
+    color: black;
+}
+.fcard .fcard-body .categ svg{
+    padding: 2px 10px;
+    color:#30e3ca;
+}
+.fcard .fcard-body .categ svg:hover{
+    padding: 0 10px;
+    color:#ffffff;
+    background: red;
+    border-radius: 50%;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+.ftitle h4 {
+    font-size: 1.2rem; /* Reduce title size */
+    margin-bottom: 5px; /* Reduce margin */
+    color:#30e3ca;
+    
+}
+
+.categ p, .ftitle p {
+    font-size: 0.9rem; /* Adjust font size */
+}
+
+.rate p {
+    font-size: 0.8rem; /* Adjust review text size */
+    margin-left: 10px; /* Add spacing between stars and text */
+}
+
+.fa-star {
+    font-size: 0.9rem; 
+}
+.icons svg.active {
+color: #f89d13;
+}
+.icons svg {
+color: #000000;
+}
+.prod {
+    height:inherit;
+}
+
+.title {
+    color: #30e3ca;
+    position: relative;
+    padding: 20px;
+}
+.title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    border-bottom: 3px solid #30e3ca;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.title p {
+    color: rgba(255, 255, 255, 0.8); /* More visible white text */
+}
+
+.box {
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.4); /* Transparent black overlay */
+    position: absolute;
+    inset: 0;
+    bottom: 0;
+}
+
+.overlay .con-t {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.overlay .icon svg {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #888; /* Background color for the icon */
+    color: #fff; /* Icon color */
+    text-align: center;
+    transition: 0.3s;
+}
+
+.prod .box .overlay .con-t a {
+    color: #f8f9fa; /* Text color for the links inside .con-t */
+}
+
+.con-t .ft {
+    background-color: #30e3ca; /* Background color for the .ft element */
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 10px;
+    color: #fff; /* Text color inside the .ft element */
+}
+.con-t .tt {
+color:rgba(255, 255, 255, 0.8) ;
+}
+/* Hover effect for the icon */
+.overlay .icon svg:hover {
+    background-color: #ff0000; /* Darker background on hover */
+    color: #fff; /* White icon color on hover */
+}
+.trend{
+    height: inherit;
+    background-color: #c9c9c9;
+}
+.test .person{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.test .img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.test .img img {
+    border-radius: 50%;
+}
+.test .person p {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 30px;
+}
+@keyframes jelloAnimation {
+    0% {
+        transform: none;
+    }
+    11.1% {
+        transform: none;
+    }
+    22.2% {
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+    33.3% {
+        transform: skewX(6.25deg) skewY(6.25deg);
+    }
+    44.4% {
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+    55.5% {
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+    66.6% {
+        transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+    77.7% {
+        transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+    88.8% {
+        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes lightSpeedInLeft {
+    0% {
+        transform: translateX(-100%) skewX(30deg); /* Start off-screen to the left with a skew */
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(20%) skewX(-5deg); /* Move slightly to the right while decreasing skew */
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-5%) skewX(2deg); /* Adjust position and skew back to normal */
+    }
+    100% {
+        transform: translateX(0); /* Final position */
+        opacity: 1;
+    }
+}
+
+.animate__lightSpeedInLeft {
+    animation-name: lightSpeedInLeft; /* Apply the animation */
+    animation-duration:5s; /* Animation duration */
+    animation-timing-function: ease-out; /* Smooth timing */
+    animation-fill-mode: both; /* Ensures the element stays in the final state after animation */
+}
